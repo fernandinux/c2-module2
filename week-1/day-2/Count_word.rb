@@ -1,7 +1,7 @@
 class String
     def count_words
     f= Hash.new(0)
-    downcase.scan(/\w+/){|x| f[x]+=1}
+    downcase.scan(/\w+/){|x| f[x] = f[x]+1}
     return f
     end
 
